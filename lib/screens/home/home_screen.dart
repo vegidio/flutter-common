@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_common/util/routes.dart';
 import 'package:get/get.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -13,7 +14,7 @@ class HomeScreen extends StatelessWidget {
           height: 100,
           width: 100,
           child: ElevatedButton(
-            onPressed: () => Get.toNamed('/auth', id: 1),
+            onPressed: () => Get.toNamed(Routes.auth.name, id: 1),
             child: const Text('Test'),
           ),
         ),
